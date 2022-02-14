@@ -2,7 +2,7 @@
 *   Draws a point at the centre of the screen, its position changes
 *   in accordance with user input (via the joystick).
 *
-*   Author: Andrew Knowles 2021
+*   Author: Andrew Knowles 2021 / Updated by Dr Tim Amsdon Feb 2022
 */
 
 #include "mbed.h"
@@ -72,7 +72,11 @@ int main(){
             y_pos++;
             x_pos--;
             printf(" Direction: SW\n");
+        } else {
+            printf(" Direction: Centre\n");
         }
+
+
 
         boundary(x_pos, y_pos); //pass the new x,y position to function
             
